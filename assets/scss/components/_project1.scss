@@ -1,0 +1,82 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.project1 {
+    &__title {
+        color: $black-color; 
+        font-family: $title-font;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130px; 
+        letter-spacing: -1px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color1;
+        margin-bottom: 80px;
+
+        
+        @include breakpoint (max-md) {
+           font-size: 60px;
+           line-height: 1;
+          }
+    }
+
+    &-card {
+        max-width: 1130px;
+        margin: 0 auto;
+        padding: 0px;
+        border: 0px solid $border-color1;
+        margin-bottom: 80px;
+        @include transition;
+        overflow: hidden;
+
+        &__thumb {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        } 
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &__title {
+            color: $black-color; 
+            font-family: $title-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;  
+        }
+
+        &__year {
+            color: $black-color; 
+            font-family: $title-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px; 
+        }
+
+        &:hover { 
+            padding: 40px;
+            border: 1px solid $border-color1;
+
+            .project1 { 
+                &-card {
+                    &__content { 
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                 }
+            }
+        }
+    }
+}

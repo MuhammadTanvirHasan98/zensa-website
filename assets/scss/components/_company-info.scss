@@ -1,0 +1,187 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.company-info {
+    &__wrapper {
+        background: #1A1A1A;
+        padding: 150px 300px 150px 150px;
+        margin-right: -300px;
+        @include breakpoint (max-xxl) {
+            margin-right: 0;
+            padding: 50px;
+        }
+
+        @include breakpoint (max-md) {
+            padding: 20px;
+        }
+    }
+
+    &-item1 {
+        padding: 40px;
+        border: 1px solid $border-color1;
+        @include breakpoint (max-md) {
+            padding: 20px;
+        }
+        &__number {
+            color: $white-color;
+            font-family: $title-font;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            color: $white-color;
+            font-family: $title-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+
+        &__desc {
+            color: $white-color;
+            font-family: $body-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: start;
+            margin-bottom: 120px;
+        }
+
+        &__link {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $border-color1;
+            color: $white-color;
+
+            i {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &-thumb1 {
+        height: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video1-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 118px;
+            height: 118px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                color: #FE4A22;
+                font-size: 24px;
+            }
+        }
+    }
+
+    &-item2 {
+        padding: 40px;
+        background: $white-color2;
+
+        &__title {
+            color: $black-color; 
+            font-family: $title-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; 
+            margin-bottom: 5px;
+        }
+
+        &__stars {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+            font-size: 10px;
+            color: $black-color;
+        }
+
+        &__number {
+            color: #21404B;
+            font-family: $title-font;
+            font-size: 120px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130px;
+            letter-spacing: -1px;
+            text-align: center;
+        }
+    }
+
+    &-item3 {
+        padding: 40px;
+        background: #FE4A22;
+
+        &__title {
+            color: $white-color; 
+            font-family: $title-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; 
+            margin-bottom: 30px;
+        }
+ 
+
+        &__number {
+            color: $white-color; 
+            font-family: $title-font; 
+            font-size: 120px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130px;  
+            letter-spacing: -1px;
+            text-align: center;
+        }
+    }
+
+    &-item4 {
+        padding: 40px;
+        background: #FFD026;
+
+        &__title {
+            color: #1A1A1A; 
+            font-family: $title-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; 
+            margin-bottom: 30px;
+        }
+ 
+
+        &__number {
+            color: #1A1A1A; 
+            font-family: $title-font; 
+            font-size: 120px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130px;  
+            letter-spacing: -1px;
+            text-align: center;
+        }
+    }
+}

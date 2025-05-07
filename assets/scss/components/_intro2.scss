@@ -1,0 +1,85 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.intro2 {
+    padding: 200px 0 400px;
+    text-align: center;
+
+    @include breakpoint (max-lg) {
+        padding: 150px 0 380px;
+      }
+
+    &__title {
+        color: $text-color2;
+        font-family: $title-font2;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 92px;
+        letter-spacing: -2.8px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+
+        @include breakpoint (max-lg) {
+          font-size: 50px;
+          line-height: 1.5;
+        }
+
+        span {
+            color: $theme-color2;
+        }
+    }
+
+    &__desc {
+        color: $text-color2;
+        font-family: $body-font2;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        &-video {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            p {
+                color: $black-color;
+                font-family: $body-font2;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 17px; 
+            }
+        }
+    }
+
+    &__video-thumb {
+        margin-top: -300px;
+        margin-bottom: 100px;
+        position: relative;
+        img { 
+            box-shadow: 5px 5px 90px #28C76F;
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+/*-----------------------------------------------------------------
+Theme Name: Zensa
+Author: themefrey
+Author URI: https://themeforest.net/user/themefrey
+Version: 1.0.0 
+Description: Zensa - Creative Multipurpose Html Template
+-------------------------------------------------------------------
+ CSS TABLE OF CONTENTS
+------------------------------------------------------------------- 
+1. Common
+2. Header
+3. Hero
+4. Video
+5. Brand
+6. About
+7. Meanmenu
+8. Title
+9. Service
+10. Project
+11. Testimonial
+12. Contact
+13. Blog
+14. Pricing
+15. WCU
+16. Team
+17. FAQ
+18. Work Process
+19. Error
+20. Footer
+------------------------------------------------------------------*/
+
+//====== Components Start ======//
+
+/* 1. Common */  
+@use "./components/common/sidemenu";   
+@use "./components/common/pagination";    
+@use "./components/common/title";    
+@use "./components/common/breadcumb";    
+@use "./components/common/sidebar";    
+@use "./components/common/video";    
+
+/* 2. Header */
+@use "./components/header";
+@use "./components/header2"; 
+// @use "./components/header3";
+// @use "./components/header4";
+
+/* 3. Intro */ 
+@use "./components/intro1";
+@use "./components/intro2";
+@use "./components/intro3";
+
+/* 4. Company Info */ 
+@use "./components/company-info";
+
+/* 5. Brand */
+ 
+
+/* 6. About */
+@use "./components/about1";
+@use "./components/about3";
+
+/* 7. Meanmenu */
+@use "./components/meanmenu";
+  
+/* 8. Title */ 
+
+/* 9. Service */
+@use "./components/service1";
+
+/* 10. Work process */
+@use "./components/wp1";
+
+/* 11. Client */ 
+@use "./components/client1";
+@use "./components/client3";
+
+/* 12. Project */ 
+@use "./components/project1";
+
+/* 13. Testimonial */ 
+@use "./components/testimonial1";
+@use "./components/testimonial2";
+@use "./components/testimonial3";
+
+/* 14. Wwa */ 
+@use "./components/wwa1";
+
+/* 15. Blog */
+@use "./components/blog1";
+@use "./components/blog2";
+@use "./components/blog-details";
+
+/* 16. Cta */
+@use "./components/cta1";
+@use "./components/cta2";
+@use "./components/cta3";
+@use "./components/cta4";
+
+/* 17. Feature */
+@use "./components/feature1";
+@use "./components/feature2";
+@use "./components/feature3";
+@use "./components/feature4";
+
+/* 18. Wcu */
+@use "./components/wcu1";
+
+/* 19. Faq */
+@use "./components/faq1";
+@use "./components/faq2";
+
+/* 20. Pricing */
+@use "./components/pricing1";
+@use "./components/pricing2";
+
+/* 21. Contact1 */ 
+@use "./components/contact1";
+
+
+/* 20. Footer */
+@use "./components/footer";
+@use "./components/footer2";
+@use "./components/footer3";
+
+/*====== Components End ======*/
+
+//====== Template Section Style End ======//

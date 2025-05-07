@@ -1,0 +1,141 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.testimonial3 {
+    background: #F8FAF5;
+
+    &-card {
+        position: relative;
+        padding: 70px 100px 60px;
+        border-radius: 20px;
+        background: $white-color;
+
+        @include breakpoint (max-xl) {
+            padding: 30px;
+        }
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #FF8C42;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        &__desc {
+            color: $text-color2; 
+            font-family: $body-font2;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 65px;
+            text-align: start;
+            margin-bottom: 40px;
+
+            @include breakpoint (max-xl) {
+               font-size: 20px;
+               line-height: 1.5;
+            }
+        }
+
+        &-profile {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+
+            &__thumb {
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            &__content {
+                &-name {
+                    color: $text-color2;
+                    font-family: $title-font2;
+                    font-size: 35px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 43px;
+                    margin-bottom: 5px;
+                    @include breakpoint (max-xl) {
+                       font-size: 15px;
+                       list-style: 1.2;
+                    }
+                }
+
+                &-desig {
+                    color: $text-color2;
+                    font-family: $title-font2;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    text-align: start;
+
+                    @include breakpoint (max-xl) {
+                        font-size: 15px;
+                        list-style: 1.2;
+                     }
+                }
+            }
+        }
+
+        &__quote {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+
+            @include breakpoint (max-xl) {
+                display: none;
+             }
+        }
+    }
+
+    &-slider {
+        position: relative;
+        padding: 0 40px;
+    }
+
+    &-card {
+        &-controls {
+            @include breakpoint (max-lg) {
+           display: none;
+            }
+
+            &__arrowLeft {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0%;
+                z-index: 6;
+                width: 110px;
+                height: 110px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $white-color;
+                border: 1px solid #CCCCCD;
+                border-radius: 50%;
+            }
+
+            &__arrowRight {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0%;
+                z-index: 6;
+                width: 110px;
+                height: 110px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $theme-color2;
+                border: 1px solid #CCCCCD;
+                border-radius: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+ 
+
+.faq1 {
+    &__wrapper {
+        max-width: 600px;
+        margin: 2rem auto;
+        font-family: sans-serif;
+    }
+
+    &__item {
+        border: 1px solid #F8FAF5;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        &--active {
+            background-color: $white-color;
+
+            .faq1__answer {
+                max-height: 200px !important;
+                padding-bottom: 1rem !important;
+            }
+
+            .faq1__question { 
+                background: #F8FAF5;
+            }
+        
+            .faq1__icon.fa-plus {
+                display: none;
+            }
+
+            .faq1__icon.fa-minus {
+                display: inline;
+            }
+        }
+
+        .faq1__question {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            cursor: pointer;
+
+            .faq1__icon {
+                width: 30px;
+                height: 30px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: $white-color;
+                background: $theme-color1;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 14px;
+                margin-right: 20px;
+
+                &.fa-minus {
+                    display: none;
+                }
+            }
+
+            .faq1__title {
+                color: $text-color2;
+                font-family: $title-font2;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                text-transform: capitalize;
+
+                @include breakpoint (max-md) {
+                    font-size: 14px;
+                    line-height: 1.3;
+                 }
+            }
+        }
+
+        .faq1__answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 20px;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+
+            p {
+                margin: 1rem 0;
+                color: $text-color2;
+                font-family: $body-font2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: start;
+
+                @include breakpoint (max-md) {
+                    font-size: 14px;
+                    line-height: 1.5;
+                 }
+            }
+        }
+    }
+}

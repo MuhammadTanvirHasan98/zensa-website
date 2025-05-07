@@ -1,0 +1,39 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.cta1 {
+    position: relative;
+    background: #FFD026;
+
+    &__shape1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__shape2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    &__title {
+        color: $black-color; 
+        font-family: $title-font;
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130px; 
+        letter-spacing: -1px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

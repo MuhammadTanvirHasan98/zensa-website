@@ -1,0 +1,62 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.client1 {
+    &-logo {
+        opacity: 0.4;
+        @include transition;
+
+        &:hover {
+            opacity: 1;
+        }
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    &__title {
+        position: relative;
+        color: $black-color2; 
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 14px; 
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 80px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 41%;
+            height: 1px;
+            top: 8px;
+            left: 0;
+            background: $border-color1;
+
+            @include breakpoint (max-md) {
+              display: none;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 41%;
+            height: 1px;
+            top: 8px;
+            right: 0;
+            background: $border-color1;
+
+            
+            @include breakpoint (max-md) {
+                display: none;
+              }
+        }
+
+    }
+}

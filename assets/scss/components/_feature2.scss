@@ -1,0 +1,62 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+.feature2 {
+    background: $white-color;
+
+    &-item {
+        padding: 20px;
+        border-radius: 10px;
+        background: $white-color;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 30px;
+
+        &__icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            @include breakpoint (max-md) {
+                flex: none;
+            }
+
+            &.bg-yellow {
+                background: #FFE8D9;
+            }
+            &.bg-green {
+                background: #D4F4E2;
+            }
+            &.bg-blue {
+                background: #CCDDF6;
+            }
+        }
+
+        &__content {
+            max-width: 392px;
+            &-title {
+                color: $black-color3;
+                font-family: $title-font2;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+
+            &-desc {
+                color: $black-color3;
+                font-family: $body-font2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: start;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/*----------------------------------------------
+    # All Variables here
+----------------------------------------------*/
+:root {
+    
+    --theme-color1: #28C76F;
+    --theme-color2: #0056D2;
+    --gradient-color: linear-gradient(90deg, #F52A03 0%, #FF8932 100%); 
+    --bg-color1: #F8FAF5;
+    --white: #ffffff; 
+    --white2: #CCC; 
+    --black: #000000;    
+    --black2: #1A1A1A;     
+    --black3: #12141D;    
+    --yellow: #FF9924;    
+    --text-color1: #6A7388; 
+    --text-color2: #333; 
+    --text-color3: #B5B5B5; 
+    --text-color4: #525252; 
+    --border-color1: #E2E2E2; 
+    --border-color2: #CCCCCD; 
+
+    --icon-font: "Font Awesome 6 Pro";
+    --title-font: "Urbanist", sans-serif;
+    --body-font:   "Poppins", sans-serif;
+    --title-font2: "Instrument Sans", sans-serif;
+    --body-font2:  "Roboto", sans-serif;
+    --icon-font: "Font Awesome 6 Pro";
+}
+
+// Theme Color - Defualt Colors 
+$theme-color1: var( --theme-color1);
+$theme-color2: var( --theme-color2); 
+$gradient-color: var( --gradient-color); 
+$bg-color1: var(--bg-color1); 
+$text-color1: var(--text-color1); 
+$text-color2: var(--text-color2); 
+$text-color3: var(--text-color3); 
+$text-color4: var(--text-color4); 
+$border-color1: var(--border-color1); 
+$border-color2: var(--border-color2); 
+
+$white-color: var(--white); 
+$white-color2: var(--white2); 
+$black-color: var(--black); 
+$black-color2: var(--black2); 
+$black-color3: var(--black3); 
+$yellow-color: var(--yellow); 
+
+// Font Variation
+$icon-font : var(--icon-font);
+$title-font: var(--title-font); 
+$title-font2: var(--title-font2); 
+$body-font: var(--body-font);  
+$body-font2: var(--body-font2);  
+$fa: var(--icon-font);

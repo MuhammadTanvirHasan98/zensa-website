@@ -1,0 +1,116 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.cta4 {
+
+    &-wrapper {
+        padding: 80px; 
+        background: transparent;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+        border: 1px solid $border-color1; 
+
+        @include breakpoint (max-xl) {
+            padding: 30px;  
+         }
+
+        &__shape1 {
+            position: absolute;
+            bottom: 12%;
+            right: 4%;
+        }
+    }
+
+    &__title {
+        color: $text-color2;
+        text-align: center;
+        font-family: $title-font2;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 61px;
+        letter-spacing: -0.56px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+
+        @include breakpoint (max-xl) {
+            font-size: 36px;
+            line-height: 1.3;
+         }
+    }
+
+    &__desc {
+        color: $text-color2;
+        text-align: center;
+        font-family: $body-font2;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 0 120px;
+        margin-bottom: 40px;
+
+        @include breakpoint (max-xl) {
+            padding: 0 20px;  
+         }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        @include breakpoint (max-xl) {
+          flex-wrap: wrap;
+         }
+    }
+
+    &-content {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__form-cntl {
+        position: relative;
+        border: 1px solid $border-color1;
+        border-radius: 50px;
+        max-width: 495px;
+        margin: 0 auto;
+
+        input {
+            padding: 20px 30px;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border-radius: 50px;
+            border: none;
+
+            &::placeholder {
+                color: $white-color; 
+                font-family: $body-font2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; 
+            }
+        }
+
+    }
+
+
+    &__button {
+        position: absolute;
+        top: 2px;
+        right: 3px;
+        padding: 14px 40px;
+        border-radius: 50px;
+        background: $white-color;
+
+        @include breakpoint (max-xl) {
+            padding: 14px 20px;  
+         }
+    }
+}

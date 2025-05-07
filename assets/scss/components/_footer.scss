@@ -1,0 +1,178 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+/*----------------------------------------------
+    # Footer style here
+----------------------------------------------*/
+
+.footer1 {
+  padding: 100px;
+  background: #1A1A1A;
+  @include breakpoint (max-md) {
+    padding: 100px 20px;
+   }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $text-color4;
+
+    @include breakpoint (max-lg) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @include breakpoint (max-lg) {
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      &-info {
+        display: flex;
+        align-items: flex-start;
+        gap: 17px;
+
+        &__icon {
+          color: #FE4A22;
+        }
+
+        &__content {
+          &-title {
+            color: $white-color;
+            font-family: $title-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+          }
+
+          &-text {
+            color: $white-color;
+            font-family: $body-font;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    @include breakpoint (max-md) {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    &-left {
+      &__title {
+        color: $border-color1;
+        font-family: $title-font;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+        margin-bottom: 25px;
+        max-width: 306px;
+      }
+
+      &__form {
+        position: relative;
+
+        input {
+          padding: 15px 20px;
+          border: 1px solid $text-color2;
+          background: transparent;
+          width: 100%;
+          max-width: 393px;
+        }
+
+        button {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          width: 49px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #FE4A22;
+          color: $white-color;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .nav-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 145px;
+        padding: 0 50px;
+        border-left: 1px solid $text-color4;
+        border-right: 1px solid $text-color4;
+
+        @include breakpoint (max-xl) {
+          gap: 50px;
+        }
+
+        @include breakpoint (max-lg) {
+          flex-wrap: wrap;
+          padding: 0 30px;
+          margin-left: 20px;
+        }
+
+        &__link {
+          display: block;
+          color: $white-color;
+          font-family: $body-font;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+
+      .social {
+        a {
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $text-color4;
+          color: $white-color;
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            background: #FFD026;
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+
+}

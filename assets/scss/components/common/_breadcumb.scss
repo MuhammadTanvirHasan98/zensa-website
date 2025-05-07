@@ -1,0 +1,37 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.breadcumb {
+    padding: 266px 0px 158px;
+    background: $bg-color1;
+
+    &__title {
+        color: $text-color2;
+        text-align: center;
+        font-family: $title-font2;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 61px;
+        letter-spacing: -0.56px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+            color: $text-color2;
+            text-align: center;
+            font-family: $title-font2;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}

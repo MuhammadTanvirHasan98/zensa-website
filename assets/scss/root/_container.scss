@@ -1,0 +1,11 @@
+@use '../root/variables' as *;
+@use '../root/mixins' as *;
+
+/*----------------------------------------------
+    # Container  style here
+----------------------------------------------*/ 
+@media (min-width:1800px) { 
+    .container, .container-xl{
+        max-width: 1320px;
+    } 
+}
