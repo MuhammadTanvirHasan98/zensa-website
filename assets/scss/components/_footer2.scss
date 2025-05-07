@@ -8,7 +8,7 @@
 
 .footer2 {
     overflow: hidden;
-    padding: 80px 0 0;
+    padding: 70px 0 0; //fixed the footer hieght and width issue   
     background: $bg-color1;
 
 
@@ -37,8 +37,8 @@
     }
 
     &__bottom {
-        margin-top: 80px;
-        padding: 30px 0;
+        margin-top: 60px;
+        padding: 30px 0; //fixed the footer bottom padding
         border-top: 1px solid $border-color1;
         display: flex;
         align-items: center;

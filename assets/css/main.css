@@ -3151,7 +3151,7 @@ img {
 }
 
 .breadcumb {
-  padding: 266px 0px 158px;
+  padding: 127px 0px 127px;
   background: var(--bg-color1);
 }
 .breadcumb__title {
@@ -8073,7 +8073,7 @@ img {
 ----------------------------------------------*/
 .footer2 {
   overflow: hidden;
-  padding: 80px 0 0;
+  padding: 70px 0 0;
   background: var(--bg-color1);
 }
 .footer2__desc {
@@ -8097,7 +8097,7 @@ img {
   margin-bottom: 30px;
 }
 .footer2__bottom {
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 30px 0;
   border-top: 1px solid var(--border-color1);
   display: flex;
